@@ -40,16 +40,16 @@ app.get('/:operator/:var1/:var2', function (req, res){
   var result;
 
   if(operator === "add"){
-    result = parseInt(num1) + parseInt(num2);
+    result = parseFloat(num1) + parseFloat(num2);
   }
   else if(operator === "sub"){
-    result = parseInt(num1) - parseInt(num2);
+    result = parseFloat(num1) - parseFloat(num2);
   }
   else if(operator === "div"){
-    result = parseInt(num1) / parseInt(num2);
+    result = parseFloat(num1) / parseFloat(num2);
   }
   else if(operator === "mult"){
-    result = parseInt(num1) * parseInt(num2);
+    result = parseFloat(num1) * parseFloat(num2);
   }
   else{
     result = "please specify an operator";
